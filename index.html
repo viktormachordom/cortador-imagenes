@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cortador de Imágenes</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; text-align: center; }
+    canvas { margin: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Sube una imagen para cortarla</h2>
+  <input type="file" id="imageInput" accept="image/*"><br><br>
+  <label>Número de partes: <input type="number" id="parts" value="5" min="1"></label><br><br>
+  <label>Dirección:
+    <select id="direction">
+      <option value="horizontal">Horizontal</option>
+      <option value="vertical">Vertical</option>
+    </select>
+  </label><br><br>
+  <label>Ancho personalizado (px): <input type="number" id="customWidth" min="1"></label><br><br>
+  <label>Alto personalizado (px): <input type="number" id="customHeight" min="1"></label><br><br>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
