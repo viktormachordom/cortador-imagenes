@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cortador de Carruseles</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; text-align: center; }
+    canvas { margin: 10px; display: none; }
+    .preview { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Sube una imagen larga para dividirla</h2>
+  <input type="file" id="imageInput" accept="image/*"><br><br>
+  <label>Número de partes:</label>
+  <input type="number" id="parts" min="2" value="5"><br><br>
+
+  <label>Dirección del corte:</label>
+  <select id="direction">
+    <option value="vertical">Vertical</option>
+    <option value="horizontal">Horizontal</option>
+  </select><br><br>
+
+  <label>Ancho deseado (px):</label>
+  <input type="number" id="width" placeholder="Opcional"><br><br>
+  <label>Alto deseado (px):</label>
+  <input type="number" id="height" placeholder="Opcional"><br><br>
+
+  <button id="cutButton">Cortar imagen</button>
+
+  <div id="result" class="preview"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
